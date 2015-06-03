@@ -1,6 +1,6 @@
 ﻿namespace Clipformy
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -85,6 +85,7 @@
             this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "https://github.com/MetalBunker/Clipformy";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -96,6 +97,7 @@
             this.linkLabel2.TabIndex = 8;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "https://www.transformy.io";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
             // 
             // splitContainer1
             // 
@@ -161,7 +163,7 @@
             this.txtResult.Size = new System.Drawing.Size(345, 358);
             this.txtResult.TabIndex = 7;
             // 
-            // Form1
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -172,7 +174,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTarget);
             this.Controls.Add(this.btnTransform);
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.Text = "Clipformy";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);

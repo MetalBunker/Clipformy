@@ -5,11 +5,11 @@ using System.Windows.Forms;
 
 namespace Clipformy
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
         private RestClient _transformyRestClient;
 
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
             _transformyRestClient = new RestClient("https://www.transformy.io/api/transform");
@@ -37,6 +37,12 @@ namespace Clipformy
         private void txtTarget_TextChanged(object sender, EventArgs e)
         {
             btnTransform.Enabled = txtTarget.Text.Length > 0;
+        }
+
+        private void linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            e.Link.Visited = true;
+            System.Diagnostics.Process.Start((sender as LinkLabel).Text);
         }
 
         #endregion Form methods
@@ -89,5 +95,6 @@ namespace Clipformy
         }
 
         #endregion Private methods
+
     }
 }
