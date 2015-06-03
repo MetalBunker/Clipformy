@@ -43,9 +43,10 @@ The currently expected format is:
 
 - Create a shortcut to the exe file.
 - Edit the shortcut and add a keyboard shortcut to it.
-- In any program, just copy the formatted text, press the keyboard shortcut, wait for the beep, paste (*)!
+- In any program, just copy the formatted text, press the keyboard shortcut, wait for the beep and paste (*)!
+- Don't worry you messed up with the text formatting, if the data couldn't be inferred the window will remain open ;)
 
-(*) Unluckily when you press the shortcut, the window you were working on loses focus and it doesn't get it back once the transformation is done, you will have to go back to the window manually in order to paste the result. We are thinking ways to improve this ;) 
+(\*) *Unluckily when you press the shortcut, the window you were working on loses focus and it doesn't get it back once the transformation is done, you will have to go back to the window manually in order to paste the result. We are thinking ways of improving this ;)* 
 
 ### Bugs, contact & contributions
 
