@@ -83,6 +83,7 @@ namespace Clipformy
             request.RequestFormat = DataFormat.Json;
             request.AddBody(new { source, target });
 
+            // TODO: Add error handling to the call
             // Transformy returns "\n" for new lines, we need to replace those
             return _transformyRestClient.Execute(request).Content.Replace("\n", Environment.NewLine);
         }
