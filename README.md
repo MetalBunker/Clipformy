@@ -12,7 +12,7 @@ Clipformy can also be used alone ;)
 For now the only way is to clone the repo and compile it, sorry :(  
 You'll need Visual Studio 2012.
 
-I could add a compiled version if I see fit.
+We could add a compiled version if we see fit.
 
 #### Usage
 
